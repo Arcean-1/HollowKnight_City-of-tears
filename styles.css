@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    background-image: url(./images/V2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.page p,
+.page__text {
+    line-height: 1.8;
+}
+
+.page__main {
+    background-color: rgb(26, 30, 35);
+    width: 754px;
+    padding: 24px 36px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.page__background_little {
+    width: 100%;
+    display: block;
+}
+
+.sub-link {
+    font-size: 10px;
+    color: #758bca;
+}
+
+.main-style-link {
+    color: #6b80c2;
+    text-decoration: none;
+}
+
+.page__background_little {
+    margin-bottom: 75px;
+    display: block;
+}
+
+/* Карта */
+
+.map {
+    width: 300px;
+    border: 1px solid rgba(65, 82, 130, .5);
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 7px 7px 0px 0px;
+    background-image: url(https://vignette.wikia.nocookie.net/hollowknight/images/2/21/Infoback1.png/revision/latest?cb=20190814165908&path-prefix=ru);
+    background-color: rgba(81,90,132,0.4);
+    border-image-source: url(https://images.wikia.nocookie.net/hollowknight/ru/images/c/cc/Bottom_custom.png);
+    border-image-slice: 60% fill;
+    border-image-width: 40px 40px 40px 40px;
+    padding: 0px;
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.map__title {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(90 110 166 / 37%);
+    color: #e8e8e8;
+    padding-top: 10px;
+    border-image-source: url(https://images.wikia.nocookie.net/hollowknight/ru/images/7/75/Top_custom.png);
+    border-image-slice: 30% fill;
+    border-image-width: 40px 40px 40px 40px;
+}
+
+.map__image {
+    width: 100%;
+}
+
+.map-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.2;
+}
+
+.map-buttons__button {
+    padding: 10px;
+    position: relative;
+    color: #6b80c2;
+}
+
+.map-buttons__button_active {
+    color: #e8e8e8;
+}
+
+.map-buttons__button_active::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #e8e8e8;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    /* border-bottom: 2px solid white; */
+}
+
+.map__hr-img {
+    width: 100%;
+    margin-top: -200px;
+    background-color: rgb(90 110 166 / 37%);
+}
+
+.map__description-block {
+    text-align: left;
+    width: 100%;
+    padding: 10px 5px 0px;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.map__descriptions-title {
+    font-size: 12px;
+    font-weight: 600;
+    width: 45%;
+}
+
+.map__ceil {
+    vertical-align: top;
+    padding-bottom: 15px;
+}
+
+.map__links-list {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.map__descriptions-link {
+    color: #9aade5;
+}
+
+.station {
+    margin-bottom: 0;
+}
+
+.main__table {
+    border-collapse: collapse;
+    border: 1px solid #4d5054;
+    width: 100%;
+    text-align: center;
+}
+
+.main__table th {
+    background-color: #3c4044;
+    padding: 13px;
+}
+
+.main__table td {
+    border: 1px solid #4d5054;
+    padding: 6px;
+}
+
+.title {
+    font-family: 'Kurale', serif;
+}
+
+.title-1 {
+    margin: 0;
+    padding: 10px 0 20px;
+}
+
+.title-2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.25;
+    overflow-wrap: break-word;
+    position: relative;
+}
+
+.title-2::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    background-color: #758bca;
+}
+
+.line-short {
+    width: 55%;
+}
+
+.title-2.line-short::after {
+    width: 55%;
+}
+
+.title-3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.title-4 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    font-family: 'Rubik';
+}
+
+.title-3, .title-4 {
+    clear: both;
+}
+
+.main__list li {
+    list-style-image: url(https://vignette.wikia.nocookie.net/hollowknight/images/9/9a/BulletPoint.png);
+    padding-top: 5px;
+}
+
+.icon-image {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+.back-link {
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Редактирование текста */
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
